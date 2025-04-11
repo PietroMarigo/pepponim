@@ -1,0 +1,9 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "style",
+        "styles",
+        "on_colors",
+        "on_highlights"
+    ]
+}
