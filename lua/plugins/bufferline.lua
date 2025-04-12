@@ -11,6 +11,10 @@ return {
 					themable = true,
 					close_command = "bdelete! %d",
 					indicator = { style = "underline" },
+          numbers = "ordinal",
+          pick = {
+            alphabet = "123456789",
+          },
           truncate_names = true,
 					tab_size = 18,
 					diagnostics = "nvim_lsp",
@@ -18,7 +22,10 @@ return {
 						{
 							filetype = "neo-tree",
 							text = "File Explorer",
-							separator = true,
+							separator = false,
+              highlight = {
+                offset_separator = true,
+              },
 							text_align = "center",
 						},
 					},
