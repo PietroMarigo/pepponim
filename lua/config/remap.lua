@@ -35,3 +35,6 @@ map("n", "<leader>gf", vim.lsp.buf.format, {})
 map("n", "<tab>", ":BufferLineCycleNext<CR>", {desc = "cycle to next page"})
 map("n", "<S-tab>", ":BufferLineCyclePrev<CR>", {desc = "cycle to previuos page"})
 map("n", "<C-w>", ":BufDel<CR>", {desc = "close current buffer"})
+
+-- ToggleTerm
+map("n", "<leader>t", ":ToggleTerm<CR>", {desc = "Toggle Terminal"})
