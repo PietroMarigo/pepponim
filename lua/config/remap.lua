@@ -34,6 +34,7 @@ map("n", "<leader>gf", vim.lsp.buf.format, {})
 -- Bufferline
 map("n", "<tab>", ":BufferLineCycleNext<CR>", {desc = "cycle to next page"})
 map("n", "<S-tab>", ":BufferLineCyclePrev<CR>", {desc = "cycle to previuos page"})
+map("i", "<C-tab>", ":BufferLineCyclePrev<CR>", {desc = "cycle to next page while in insert mode"})
 map("n", "<C-w>", ":BufDel<CR>", {desc = "close current buffer"})
 
 -- ToggleTerm
