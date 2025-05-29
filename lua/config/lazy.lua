@@ -28,7 +28,6 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })
-require('java').setup()
-require('lspconfig').jdtls.setup({})
+--require('plugins.java').setup()
 require("config.remap")
-
+require('lspconfig').jdtls.setup({})

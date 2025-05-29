@@ -10,7 +10,7 @@ return {
 			"neovim/nvim-lspconfig",
 			"mfussenegger/nvim-dap",
 			{
-				"williamboman/mason.nvim",
+				"mason-org/mason.nvim",
 				opts = {
 					registries = {
 						"github:nvim-java/mason-registry",
@@ -25,6 +25,18 @@ return {
 		config = function()
 			cmd = { vim.fn.expand("~/.local/share/nvim/mason/bin/jdtls") }
 			root_dir = vim.fs.dirname(vim.fs.find({ ".git", "mvnw" }, { upward = true })[1])
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "OpenJDK-21",
+                path = "/usr/lib/jvm/java-21-openjdk/",
+              },
+            }
+          }
+        }
+      }
 		end,
 	},
 }
