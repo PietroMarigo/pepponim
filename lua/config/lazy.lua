@@ -31,3 +31,4 @@ require("lazy").setup({
 --require('plugins.java').setup()
 require("config.remap")
 require('lspconfig').jdtls.setup({})
+require('plugins.hardtime')
