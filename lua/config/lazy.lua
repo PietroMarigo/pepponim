@@ -30,5 +30,6 @@ require("lazy").setup({
 })
 --require('plugins.java').setup()
 require("config.remap")
-require('lspconfig').jdtls.setup({})
+--vim.lsp.config.jdtls.setup({})
+--vim.lsp.config('jdtls')
 require('plugins.hardtime')
